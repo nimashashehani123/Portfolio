@@ -153,13 +153,24 @@ header {
         font-size: 1.8vw;
         line-height: 2.5vw;
     }
+    #main > img {
+        width: 65%;
+        height: auto;
+        position: absolute;
+        top: -180px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 
     #nimasha {
-        width: 700px;
+        width: 70%;
+        height: auto;
     }
 
     #shehani {
-        width: 350px;
+        width: 50%;
+        height: auto;
     }
 
     #bio {
@@ -173,12 +184,23 @@ header {
         line-height: 3vw;
     }
 
+    #main > img {
+        width: 60%;
+        height: auto;
+        top: -150px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
     #nimasha {
-        width: 600px;
+        width: 60%;
+        height: auto;
     }
 
     #shehani {
-        width: 300px;
+        width: 45%;
+        height: auto;
     }
 
     #bio {
@@ -208,14 +230,25 @@ header {
         margin: 1vw 0;
     }
 
+    #main > img {
+        width: 55%;
+        height: auto;
+        top: -100px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
     #nimasha {
-        width: 500px;
-        top: 330px;
+        width: 55%;
+        top: 300px;
+        height: auto;
     }
 
     #shehani {
-        width: 250px;
-        top: 520px;
+        width: 40%;
+        top: 480px;
+        height: auto;
     }
 
     #bio {
@@ -239,14 +272,25 @@ header {
         margin: 1vw 0;
     }
 
+    #main > img {
+        width: 75%;
+        height: auto;
+        top: -50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
     #nimasha {
-        width: 350px;
-        top: 280px;
+        width: 80%;
+        top: 240px;
+        height: auto;
     }
 
     #shehani {
-        width: 200px;
-        top: 460px;
+        width: 60%;
+        top: 420px;
+        height: auto;
     }
 
     #bio {
@@ -270,16 +314,25 @@ header {
         margin: 1vw 0;
     }
 
+    #main > img {
+        width: 80%;
+        height: auto;
+        top: -30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
     #nimasha {
-        width: 320px;
-        top: 250px;
+        width: 85%;
+        top: 220px;
+        height: auto;
     }
 
     #shehani {
-        width: 180px;
-        top: 420px;
+        width: 65%;
+        top: 400px;
+        height: auto;
     }
-
     #bio {
         font-size: 5.5vw;
     }
@@ -301,14 +354,25 @@ header {
         margin: 1vw 0;
     }
 
+    #main > img {
+        width: 85%;
+        height: auto;
+        top: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
     #nimasha {
-        width: 280px;
-        top: 220px;
+        width: 90%;
+        top: 200px;
+        height: auto;
     }
 
     #shehani {
-        width: 160px;
-        top: 390px;
+        width: 70%;
+        top: 380px;
+        height: auto;
     }
 
     #bio {

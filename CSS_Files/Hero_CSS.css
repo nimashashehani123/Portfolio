@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background: black;
+}
+
+header {
+    position: relative;
+}
+
+#pink {
+    position: relative;
+    width: 100%;
+    height: 620px;
+    background: #DBCACA;
+}
+
+#slogan > p {
+    position: absolute;
+    width: 22vw;
+    top: 3vw;
+    right: 0;
+    opacity: 100%;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 3vw;
+    letter-spacing: 0.2em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#contact_list {
+    display: flex;
+    position: absolute;
+    top: 2vw;
+    left: 3vw;
+}
+
+#contact_list > li {
+    margin: 1.5vw;
+    font-size: 1.5vw;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+#contact_list > li:hover {
+    font-size: 2vw;
+}
+
+#main > img {
+    width: 580px;
+    height: 845px;
+    position: absolute;
+    top: -225px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-content: center;
+}
+
+#nimasha {
+    width: 840px;
+    height: 280px;
+    position: absolute;
+    top: 390px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    rotate: 1deg;
+    align-content: center;
+    z-index: 1000;
+}
+
+#shehani {
+    width: 400px;
+    height: 140px;
+    position: absolute;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    top: 585px;
+    align-content: normal;
+}
+
+#l_navigate > ul {
+    position: absolute;
+    left: 0;
+    display: flex;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+#l_navigate > ul:hover {
+    color: hotpink;
+}
+
+#l_navigate > ul > li {
+    margin: 0.5vw 2vw;
+    font-family: "Lexend Zetta";
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 7vw;
+    color: #FFFFFF;
+}
+
+#r_navigate > ul {
+    position: absolute;
+    right: 0vw;
+    display: flex;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+#r_navigate > ul:hover {
+    color: hotpink;
+}
+
+#r_navigate > ul > li {
+    margin: 0.5vw 2vw;
+    font-family: 'Lexend Zetta';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 7vw;
+    color: #FFFFFF;
+}
+
+#bio {
+    text-align: center;
+    margin-top: 8vw;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 5vw;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1440px) {
+    #slogan > p {
+        font-size: 1.8vw;
+        line-height: 2.5vw;
+    }
+
+    #nimasha {
+        width: 700px;
+    }
+
+    #shehani {
+        width: 350px;
+    }
+
+    #bio {
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    #slogan > p {
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+
+    #nimasha {
+        width: 600px;
+    }
+
+    #shehani {
+        width: 300px;
+    }
+
+    #bio {
+        font-size: 1.6vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #pink {
+        height: 500px;
+    }
+
+    #slogan > p {
+        font-size: 4vw;
+        line-height: 5vw;
+        top: 10vw;
+    }
+
+    #contact_list {
+        flex-direction: column;
+        top: 5vw;
+        left: 5vw;
+    }
+
+    #contact_list > li {
+        font-size: 2.5vw;
+        margin: 1vw 0;
+    }
+
+    #nimasha {
+        width: 500px;
+        top: 330px;
+    }
+
+    #shehani {
+        width: 250px;
+        top: 520px;
+    }
+
+    #bio {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 425px) {
+    #slogan > p {
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+
+    #contact_list {
+        top: 10vw;
+        left: 5vw;
+    }
+
+    #contact_list > li {
+        font-size: 3vw;
+        margin: 1vw 0;
+    }
+
+    #nimasha {
+        width: 350px;
+        top: 280px;
+    }
+
+    #shehani {
+        width: 200px;
+        top: 460px;
+    }
+
+    #bio {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 375px) {
+    #slogan > p {
+        font-size: 5.5vw;
+        line-height: 7vw;
+    }
+
+    #contact_list {
+        top: 12vw;
+        left: 5vw;
+    }
+
+    #contact_list > li {
+        font-size: 3.5vw;
+        margin: 1vw 0;
+    }
+
+    #nimasha {
+        width: 320px;
+        top: 250px;
+    }
+
+    #shehani {
+        width: 180px;
+        top: 420px;
+    }
+
+    #bio {
+        font-size: 5.5vw;
+    }
+}
+
+@media (max-width: 320px) {
+    #slogan > p {
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+
+    #contact_list {
+        top: 14vw;
+        left: 5vw;
+    }
+
+    #contact_list > li {
+        font-size: 4vw;
+        margin: 1vw 0;
+    }
+
+    #nimasha {
+        width: 280px;
+        top: 220px;
+    }
+
+    #shehani {
+        width: 160px;
+        top: 390px;
+    }
+
+    #bio {
+        font-size: 6vw;
+    }
+}

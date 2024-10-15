@@ -1,0 +1,68 @@
+#S4_Projects{
+    padding: 60px 20px;
+    background: white;
+    text-align: center;
+}
+
+#S4_Projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 600;
+}
+
+.project-container {
+    display: flex;
+    margin: 0 15vw;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+}
+
+.project {
+    min-width: 400px;
+    margin: 0 55px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: hotpink;
+}
+
+.project p {
+    color: #555;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: hotpink;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: hotpink;
+}
+

@@ -31,3 +31,26 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.skill-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}

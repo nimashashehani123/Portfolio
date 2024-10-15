@@ -66,3 +66,87 @@
     background-color: hotpink;
 }
 
+@media (max-width: 1440px) {
+    .project-container {
+        margin: 0 18vw;
+    }
+    #S4_Projects h2 {
+        font-size: 2.8rem;
+    }
+    .project {
+        min-width: 320px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .project-container {
+        margin: 0 10vw;
+    }
+    #S4_Projects h2 {
+        font-size: 2.5rem;
+    }
+    .project {
+        min-width: 300px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #S4_Projects {
+        padding: 60px 10px;
+    }
+    .project-container {
+        margin: 0 5vw;
+    }
+    #S4_Projects h2 {
+        font-size: 2rem;
+    }
+    .project {
+        min-width: 250px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .project-container {
+        margin: 0 2vw;
+    }
+    #S4_Projects h2 {
+        font-size: 1.8rem;
+    }
+    .project {
+        min-width: 200px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .project-container {
+        margin: 0 1vw;
+    }
+    #S4_Projects h2 {
+        font-size: 1.6rem;
+    }
+    .project {
+        min-width: 180px;
+    }
+    .button {
+        padding: 8px 15px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .project-container {
+        margin: 0;
+    }
+    #S4_Projects h2 {
+        font-size: 1.4rem;
+    }
+    .project {
+        min-width: 160px;
+    }
+    .button {
+        padding: 6px 12px;
+    }
+}

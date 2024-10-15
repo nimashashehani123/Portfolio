@@ -1,4 +1,4 @@
-.a {
+#S2_Service {
     width: 100%;
     padding: 120px 0;
     position: relative;
@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 
-.a .container {
+#S2_Service #container {
     max-width: 1320px;
     width: 100%;
     padding-right: .75rem;
@@ -24,12 +24,12 @@
     margin-left: auto;
 }
 
-.a .container .row {
+#S2_Service #container #row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.a .container .row .card-column {
+#S2_Service #container #row .card-column {
     flex: 0 0 auto;
     width: 33.33333333%;
     text-align: center;
@@ -125,7 +125,7 @@
 }
 
 @media (max-width: 1024px) {
-    .a .container .row .card-column {
+    #S2_Service #container #row .card-column {
         flex: 0 0 auto;
         width: 50%;
         margin-bottom: 40px;
@@ -136,7 +136,7 @@
 }
 
 @media (max-width: 768px) {
-    .a .container .row .card-column {
+    #S2_Service #container #row .card-column {
         width: 100%;
         margin-bottom: 40px;
     }
@@ -146,7 +146,7 @@
 }
 
 @media (max-width: 425px) {
-    .a .container .row .card-column {
+    #S2_Service #container #row .card-column {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -156,7 +156,7 @@
 }
 
 @media (max-width: 375px) {
-    .a .container .row .card-column {
+    #S2_Service #container #row .card-column {
         width: 100%;
     }
     .card-details {
@@ -166,7 +166,7 @@
 
 
 @media (max-width: 320px) {
-    .a .container .row .card-column {
+    #S2_Service #container .row .card-column {
         width: 100%;
     }
     .card-details {

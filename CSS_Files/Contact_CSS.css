@@ -177,6 +177,113 @@
     color: #ffe6e6;
 }
 
+@media (max-width: 1440px) {
+    #contact-form h2, #contact-card h2 {
+        font-size: 2rem;
+    }
+    #contact-card p {
+        font-size: 1rem;
+    }
+    #contact-icons li {
+        font-size: 1rem;
+    }
+}
 
+@media (max-width: 1024px) {
+    #contact-section {
+        padding: 20px 15px;
+    }
+    #contact-form h2, #contact-card h2 {
+        font-size: 1.8rem;
+    }
+    #contact-card p {
+        font-size: 1rem;
+    }
+    #contact-form {
+        padding: 30px;
+    }
+    .form-group input, .form-group textarea {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact-form, #contact-card {
+        padding: 20px;
+    }
+    .form-group input, .form-group textarea {
+        padding: 10px;
+    }
+    #social-icons a {
+        margin: 0 10px;
+        font-size: 1.2rem;
+    }
+    #contact-form h2 {
+        font-size: 1.7rem;
+    }
+    #contact-card h2 {
+        font-size: 1.7rem;
+    }
+    #contact-icons li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 475px) {
+    #contact-form, #contact-card {
+        padding: 15px;
+    }
+    #contact-form h2, #contact-card h2 {
+        font-size: 1.5rem;
+    }
+    #contact-icons li {
+        font-size: 0.9rem;
+    }
+    .form-group input, .form-group textarea {
+        padding: 10px;
+    }
+    #social-icons a {
+        margin: 0 8px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    #contact-form, #contact-card {
+        padding: 10px;
+    }
+    #contact-form h2, #contact-card h2 {
+        font-size: 1.3rem;
+    }
+    .form-group input, .form-group textarea {
+        padding: 8px;
+    }
+    #contact-icons li {
+        font-size: 0.85rem;
+    }
+    #social-icons a {
+        margin: 0 5px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #contact-form, #contact-card {
+        padding: 10px;
+    }
+    #contact-form h2, #contact-card h2 {
+        font-size: 1.2rem;
+    }
+    .form-group input, .form-group textarea {
+        padding: 6px;
+    }
+    #contact-icons li {
+        font-size: 0.8rem;
+    }
+    #social-icons a {
+        margin: 0 4px;
+        font-size: 0.9rem;
+    }
+}
 
 

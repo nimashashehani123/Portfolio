@@ -105,7 +105,6 @@
     transform: translateY(-2px);
 }
 
-/* Success Message */
 #successMessage {
     display: none;
     color: green;
@@ -113,5 +112,71 @@
     font-size: 1rem;
     text-align: center;
 }
+
+#contact-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+
+#contact-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#contact-card p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+}
+
+#contact-icons {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#contact-icons li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-icons i {
+    margin-right: 10px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+#contact-icons i:hover {
+    color: #ffe6e6;
+}
+
+#social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#social-icons a {
+    margin: 0 15px;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+#social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffe6e6;
+}
+
+
 
 

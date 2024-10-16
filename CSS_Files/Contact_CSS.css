@@ -9,6 +9,9 @@
     flex-direction: column;
     overflow: hidden;
 }
+h2{
+    font-family: 'Roboto';
+}
 
 #contact-container {
     max-width: 100%;

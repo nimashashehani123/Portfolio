@@ -326,13 +326,20 @@
     </div>
 </section>
 
-<Footer>
-
-</Footer>
+<Footer></Footer>
 
 <!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
 
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      successMessage.style.display = 'block';
+      contactForm.reset();
+    });
+  });
 </script>
 </body>
 </html>

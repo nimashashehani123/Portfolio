@@ -140,8 +140,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 85%;
+    width: 80%;
+    height: 80%;
     background: rgba(256, 256, 256, 0.5);
     backdrop-filter: blur(8px);
     border-radius: 20px;
@@ -229,7 +229,7 @@
         gap: 0px;
         margin: 5px 50px;
     }
-    /*#view-more {
+    #view-more {
         width: 60%;
         height: 80%;
         padding: 40px;
@@ -249,7 +249,7 @@
 
     .case h3 {
         font-size: 24px;
-    }*/
+    }
 
 
 }

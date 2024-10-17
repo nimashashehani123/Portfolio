@@ -6,6 +6,9 @@
     padding: 50px;
     box-sizing: border-box;
 }
+h2{
+    color: white;
+}
 
 #gallery-container {
     display: flex;

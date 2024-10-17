@@ -1,8 +1,8 @@
-/* Center the container using flexbox */
 #S6_Assignment{
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample20.jpg");
     background-size: cover;
     padding: 20px;
+    position: relative;
 }
 
 .container {
@@ -72,7 +72,7 @@
 
 .snip1566 img {
     max-width: 100%;
-    backface-visibility: hidden;
+    /*backface-visibility: hidden;*/
     vertical-align: top;
     border-radius: 50%;
     padding: 10px;
@@ -93,7 +93,6 @@
     position: absolute;
     top: 75%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 2em;
     z-index: 1;
@@ -133,6 +132,63 @@
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+
+#view-more {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    padding: 20px;
+    color: white;
+    border-radius: 25px;
+}
+
+#view-more .back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    background: #555;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#view-more-content {
+    margin-top: 60px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    height: 70%;
+    overflow-y: auto;
+}
+
+.case {
+    margin-bottom: 20px;
+}
+
+.case button {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.case button.github-btn {
+    background-color: #24292e;
+}
+
 
 /* For screen sizes below 1440px */
 @media screen and (max-width: 1440px) {

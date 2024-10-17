@@ -1,7 +1,7 @@
 #S5_Tool {
     width: 100%;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     padding: 50px 0;
     position: relative;
     display: flex;
@@ -18,7 +18,7 @@
 .tool-item {
     display: inline-block;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 0 50px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);

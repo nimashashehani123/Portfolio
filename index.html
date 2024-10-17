@@ -357,6 +357,8 @@
 
 <!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+
+  //contact section
   document.addEventListener("DOMContentLoaded", () => {
     const contactForm = document.getElementById('contactForm');
     const successMessage = document.getElementById('successMessage');
@@ -367,6 +369,41 @@
       contactForm.reset();
     });
   });
+
+  //assignment section
+
+  function openViewMore(assignment, details, cases) {
+    let caseDetails = '';
+    cases.forEach((caseDetail, index) => {
+      caseDetails += `
+                <div class="case">
+                    <h3>${caseDetail}</h3>
+                    <button onclick="viewCase(${index + 1}, '${assignment}')">View</button>
+                    <button class="github-btn" onclick="goToGit(${index + 1}, '${assignment}')">Go to GitHub</button>
+                </div>`;
+    });
+
+    document.getElementById('view-more').style.display = 'block';
+    document.getElementById('view-more-content').innerHTML = `
+            <h2>${assignment}</h2>
+            <p>${details}</p>
+            ${caseDetails}`;
+  }
+
+  function closeViewMore() {
+    document.getElementById('view-more').style.display = 'none';
+  }
+
+  function viewCase(caseNumber, assignment) {
+    alert(`Viewing Case ${caseNumber} of ${assignment}`);
+  }
+
+  function goToGit(caseNumber, assignment) {
+    alert(`Navigating to GitHub for Case ${caseNumber} of ${assignment}`);
+    // Replace the following line with actual GitHub link navigation
+    window.location.href = 'https://github.com/';
+  }
+
 </script>
 </body>
 </html>

@@ -1,4 +1,6 @@
-#S6_Assignment{
+/* Existing styles */
+/* Center the container using flexbox */
+#S6_Assignment {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample20.jpg");
     background-size: cover;
     padding: 20px;
@@ -34,7 +36,6 @@
     font-family: cursive;
 }
 
-
 .snip1566 {
     position: relative;
     display: inline-block;
@@ -48,31 +49,13 @@
     transform: translateZ(0);
 }
 
-.snip1566 *,
-.snip1566:before,
-.snip1566:after {
+.snip1566 * {
     box-sizing: border-box;
     transition: all 0.3s linear;
 }
 
-.snip1566:before,
-.snip1566:after {
-    box-sizing: border-box;
-    border-radius: 50%;
-    content: '';
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: -1;
-    border: 5px solid #bbb;
-    border-color: transparent deepskyblue;
-}
-
 .snip1566 img {
     max-width: 100%;
-    /*backface-visibility: hidden;*/
     vertical-align: top;
     border-radius: 50%;
     padding: 10px;
@@ -98,152 +81,95 @@
     z-index: 1;
 }
 
-.snip1566 a {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.snip1566:hover figcaption,
-.snip1566.hover figcaption {
+.snip1566:hover figcaption {
     opacity: 1;
-    -webkit-transform: translateX(0);
     transform: translateX(0);
 }
 
-.snip1566:hover:before,
-.snip1566.hover:before,
-.snip1566:hover:after,
-.snip1566.hover:after {
-    border-width: 10px;
-}
-
-.snip1566:hover:before,
-.snip1566.hover:before {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.snip1566:hover:after,
-.snip1566.hover:after {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-
 #view-more {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 80%;
-    height: 80%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 10;
-    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 85%;
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    z-index: 100000000;
+    padding: 30px;
     color: white;
-    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
 }
 
 #view-more .back-btn {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 20px;
-    background: #555;
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 18px;
+    background: #16a085;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-#view-more-content {
-    margin-top: 60px;
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    height: 70%;
-    overflow-y: auto;
+#view-more .back-btn:hover {
+    background: #1abc9c;
+    transform: scale(1.05);
+}
+
+#view-more-content h2 {
+    color: #ecf0f1;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#view-more-content p {
+    font-size: 18px;
+    color: #bdc3c7;
+    text-align: justify;
+    margin-bottom: 30px;
 }
 
 .case {
-    margin-bottom: 20px;
+    background: linear-gradient(145deg, #2c3e50, #34495e);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.5);
+}
+
+.case h3 {
+    font-size: 22px;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.github-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.github-btn:hover {
+    background-color: #c0392b;
 }
 
 .case button {
-    margin-right: 10px;
-    padding: 10px;
-    background-color: #007bff;
+    background-color: #3498db;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-.case button.github-btn {
-    background-color: #24292e;
-}
-
-
-/* For screen sizes below 1440px */
-@media screen and (max-width: 1440px) {
-    .container {
-        gap: 0px;
-        margin: 5px 50px;
-    }
-
-
-}
-
-/* For screen sizes below 1024px (Tablet Landscape) */
-@media screen and (max-width: 1024px) {
-    .container {
-        gap: 0px;
-        margin: 5px 30px;
-    }
-
-
-}
-
-/* For screen sizes below 768px (Tablet Portrait) */
-@media screen and (max-width: 768px) {
-    .container {
-        gap: 0px;
-        margin: 5px 0px;
-    }
-
-}
-
-/* For screen sizes below 425px (Mobile Landscape) */
-@media screen and (max-width: 425px) {
-    .container {
-        gap: 0px;
-        margin: 5px 1px;
-        gap: 5px; /* Reduce gap between elements */
-    }
-
-}
-
-/* For screen sizes below 375px (Mobile Portrait) */
-@media screen and (max-width: 375px) {
-    .container {
-        margin: 5px 5px;
-        gap: 10px;
-    }
-
-}
-
-/* For screen sizes below 320px (Small Mobile) */
-@media screen and (max-width: 320px) {
-    .container {
-        margin: 0px 0px;
-        gap: 5px;
-    }
-
-
+.case button:hover {
+    background-color: #2980b9;
 }

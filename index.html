@@ -229,41 +229,42 @@
     <div class="assignment">
       <figure class="snip1566">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample14.jpg" alt="sq-sample14" />
-        <figcaption><i class="ion-android-open"> view more </i></figcaption>
-        <a href="#"></a>
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 1', 'This is the first assignment. It involves creating a responsive web design using HTML, CSS, and JavaScript.', ['Case 1: Building the layout', 'Case 2: Adding media queries', 'Case 3: Implementing JavaScript'])">view more</i></figcaption>
       </figure>
       <div>Assignment 1</div>
     </div>
     <div class="assignment">
       <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="sq-sample17" />
-        <figcaption><i class="ion-android-open">view more</i></figcaption>
-        <a href="#"></a>
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', ['Case 1: Building the UI', 'Case 2: Implementing the logic', 'Case 3: Testing the application'])">view more</i></figcaption>
       </figure>
       <div>Assignment 2</div>
     </div>
     <div class="assignment">
       <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample19.jpg" alt="sq-sample19" />
-        <figcaption><i class="ion-android-open">view more</i></figcaption>
-        <a href="#"></a>
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', ['Case 1: Building the UI', 'Case 2: Implementing the logic', 'Case 3: Testing the application'])">view more</i></figcaption>
       </figure>
       <div>Assignment 3</div>
     </div>
     <div class="assignment">
       <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample20.jpg" alt="sq-sample20" />
-        <figcaption><i class="ion-android-open">view more</i></figcaption>
-        <a href="#"></a>
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', ['Case 1: Building the UI', 'Case 2: Implementing the logic', 'Case 3: Testing the application'])">view more</i></figcaption>
       </figure>
       <div>Assignment 4</div>
     </div>
     <div class="assignment">
       <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample20.jpg" alt="sq-sample20" />
-        <figcaption><i class="ion-android-open">view more</i></figcaption>
-        <a href="#"></a>
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', ['Case 1: Building the UI', 'Case 2: Implementing the logic', 'Case 3: Testing the application'])">view more</i></figcaption>
       </figure>
       <div>Assignment 5</div>
     </div>
   </div>
 </section>
+
+<!-- View More Section -->
+<div id="view-more">
+  <div class="back-btn" onclick="closeViewMore()">Back</div>
+  <div id="view-more-content"></div>
+</div>
 
 <!-- Gallery Section -->
 <section id="S7_Gallery">

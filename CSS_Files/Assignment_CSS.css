@@ -1,16 +1,21 @@
 /* Center the container using flexbox */
+#S6_Assignment{
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample20.jpg");
+    background-size: cover;
+    padding: 20px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    gap: 20px; /* Add some space between the circles */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.001);
-    margin: 5px 100px;
+    background: rgba(256, 256, 256,0.4);
+    margin: 10px 100px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
     border-radius: 20px;
-
 }
 .assignment {
     position: relative;
@@ -127,4 +132,62 @@
 .snip1566.hover:after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+
+/* For screen sizes below 1440px */
+@media screen and (max-width: 1440px) {
+    .container {
+        gap: 0px;
+        margin: 5px 50px;
+    }
+
+
+}
+
+/* For screen sizes below 1024px (Tablet Landscape) */
+@media screen and (max-width: 1024px) {
+    .container {
+        gap: 0px;
+        margin: 5px 30px;
+    }
+
+
+}
+
+/* For screen sizes below 768px (Tablet Portrait) */
+@media screen and (max-width: 768px) {
+    .container {
+        gap: 0px;
+        margin: 5px 0px;
+    }
+
+}
+
+/* For screen sizes below 425px (Mobile Landscape) */
+@media screen and (max-width: 425px) {
+    .container {
+        gap: 0px;
+        margin: 5px 1px;
+        gap: 5px; /* Reduce gap between elements */
+    }
+
+}
+
+/* For screen sizes below 375px (Mobile Portrait) */
+@media screen and (max-width: 375px) {
+    .container {
+        margin: 5px 5px;
+        gap: 10px;
+    }
+
+}
+
+/* For screen sizes below 320px (Small Mobile) */
+@media screen and (max-width: 320px) {
+    .container {
+        margin: 0px 0px;
+        gap: 5px;
+    }
+
+
 }

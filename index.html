@@ -372,9 +372,9 @@
     cases.forEach((caseDetail, index) => {
       caseDetails += `
                 <div class="case">
-                    <h3>${caseDetail}</h3>
-                    <button onclick="viewCase(${index + 1}, '${assignment}')">View</button>
-                    <button class="github-btn" onclick="goToGit(${index + 1}, '${assignment}')">Go to GitHub</button>
+                    <h3>${caseDetail.caseName}</h3>
+                    <button class="github-btn" onclick="viewCase('${caseDetail.viewLink}')">view</button>
+                    <button class="github-btn" onclick="goToGit('${caseDetail.gitLink}')">Go to GitHub</button>
                 </div>`;
     });
 
@@ -389,14 +389,12 @@
     document.getElementById('view-more').style.display = 'none';
   }
 
-  function viewCase(caseNumber, assignment) {
-    alert(`Viewing Case ${caseNumber} of ${assignment}`);
+  function viewCase(viewLink) {
+    window.open(viewLink, '_blank');
   }
 
-  function goToGit(caseNumber, assignment) {
-    alert(`Navigating to GitHub for Case ${caseNumber} of ${assignment}`);
-    // Replace the following line with actual GitHub link navigation
-    window.location.href = 'https://github.com/';
+  function goToGit(gitLink) {
+    window.open(gitLink, '_blank');
   }
 
 </script>

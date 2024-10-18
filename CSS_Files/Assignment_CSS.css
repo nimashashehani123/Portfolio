@@ -1,7 +1,7 @@
 #S6_Assignment{
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample20.jpg");
     background-size: cover;
-    padding: 20px;
+    padding: 100px 0px;
     position: relative;
 }
 
@@ -328,7 +328,7 @@
         gap: 5px; /* Reduce gap between elements */
     }
     #view-more {
-        width: 90%;
+        width: 80%;
         height: auto; /* Allow height to adjust automatically */
         padding: 20px;
     }
@@ -363,7 +363,7 @@
         gap: 10px;
     }
     #view-more {
-        width: 95%;
+        width: 90%;
         padding: 15px;
     }
 

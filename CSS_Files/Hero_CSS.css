@@ -15,13 +15,35 @@ body {
 
 header {
     position: relative;
+    background: black;
+}
+#main-nav>ul{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    transition: color 0.3s;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 1);
+    z-index: -1000000000000000000;
+}
+
+#main-nav > ul > li {
+    margin: 0.5vw 5vw;
+    font-family: "Lexend Zetta";
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 3vw;
+    color: white;
 }
 
 #pink {
     position: relative;
     width: 100%;
     height: 620px;
-    background: #DBCACA;
+    background: url("https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjkyNDY1NTh8&ixlib=rb-4.0.3&q=85");
+    background-size: cover;
 }
 
 #slogan > p {
@@ -98,6 +120,7 @@ header {
     display: flex;
     transition: color 0.3s;
     cursor: pointer;
+
 }
 
 #l_navigate > ul:hover {
@@ -147,7 +170,6 @@ header {
     line-height: 5vw;
     color: #FFFFFF;
 }
-
 @media (max-width: 1440px) {
     #slogan > p {
         font-size: 1.8vw;

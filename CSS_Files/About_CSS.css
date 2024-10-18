@@ -1,13 +1,13 @@
 #S1_About {
     padding: 100px 20px;
-    background-color: #f5f5f5;
+    background-color: #111;
     text-align: center;
     position: relative;
 }
 
 #about_txt {
     font-size: 3rem;
-    color: #333;
+    color: darkgray;
     margin-bottom: 20px;
     font-family: 'Cinzel';
 }
@@ -15,7 +15,7 @@
 #about1 {
     font-family: 'Lexend';
     font-size: 1.2rem;
-    color: #666;
+    color: darkgray;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;

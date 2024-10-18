@@ -1,6 +1,7 @@
 #S4_Projects{
     padding: 60px 20px;
-    background: white;
+    background: url("https://images.unsplash.com/photo-1514461835410-ddd29ff89d14?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjkyNjA1MTJ8&ixlib=rb-4.0.3&q=85");
+    background-size: cover;
     text-align: center;
 }
 

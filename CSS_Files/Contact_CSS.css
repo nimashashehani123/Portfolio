@@ -1,5 +1,5 @@
 #S8_Contact {
-    background: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80");
+    background: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjkyNTYyODl8&ixlib=rb-4.0.3&q=85");
     background-size: cover;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -12,6 +12,8 @@
 h2{
     font-family: 'Roboto';
 }
+p{color: white}
+ul{color: white}
 
 #contact-container {
     max-width: 100%;
@@ -22,10 +24,11 @@ h2{
     gap: 20px;
     padding-top: 100px;
     position: relative;
+
 }
 
 #contact-form {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 20px rgba(256, 256, 256, 0.4);
     border-radius: 10px;
     padding: 40px;
     max-width: 900px;
@@ -33,6 +36,7 @@ h2{
     position: relative;
     z-index: 1;
     transition: transform 0.3s;
+    background: rgba(256, 256, 256, 0.1);
 }
 
 #contact-form:hover {
@@ -42,7 +46,7 @@ h2{
 #contact-form h2 {
     font-size: 2.2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
     font-weight: 600;
 }
 
@@ -92,9 +96,9 @@ h2{
 
 #submit-btn {
     padding: 15px;
-    background-color: #ff6b6b;
+    background-color: #333;
     border: none;
-    color: white;
+    color: darkgrey;
     font-size: 1.2rem;
     width: 100%;
     border-radius: 8px;
@@ -103,7 +107,6 @@ h2{
 }
 
 #submit-btn:hover {
-    background-color: #e05555;
     transform: translateY(-2px);
 }
 

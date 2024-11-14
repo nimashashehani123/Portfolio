@@ -8,7 +8,6 @@
     justify-content: center;      /* Horizontally center */
     align-items: center;          /* Vertically center */
     height: 70vh;                /* Full viewport height for proper vertical centering */
-    border-radius: 15%;
     margin: 20vw 0px;
 }
 

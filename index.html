@@ -39,61 +39,51 @@
 <body>
 
 <!-- Header Section -->
-<header>
-  <div id="main">
-    <nav id="main-nav">
-      <ul>
-        <li class="ABOUT">About</li>
-        <li cass="SKILLS">Skills</li>
-        <li class="PROJECT">Project</li>
-        <li class="TOLLS">Tools</li>
-        <li class="GALLERY">Gallery</li>
-        <li class="CONTACT">Contact</li>
-      </ul>
-    </nav>
-    <div id="pink">
-      <!-- contact nav -->
-      <nav id="Contact_nav">
-        <ul id="contact_list">
-          <li><i class="fa-brands fa-square-instagram" style="color: #000000;"></i></li>
-          <li><i class="fa-brands fa-facebook" style="color: #000000;"></i></li>
-          <li><i class="fa-solid fa-envelope" style="color: #000000;"></i></li>
-          <li><i class="fa-brands fa-github" style="color: #000000;"></i></li>
-          <li><i class="fa-brands fa-linkedin" style="color: #000000;"></i></li>
-        </ul>
-      </nav>
-    </div>
-   <!-- <img src="Assest/Image/image.png" >
-    <div id="slogan">
-       <p>“Crafting Solutions, Empowering Innovation"</p>
-    </div>-->
-  </div>
-  <img src="Assest/Image/image%20(6).png" id="nimasha">
-  <img src="Assest/Image/image%20(6)(1)(1).png" id="shehani">
-  <nav id="l_navigate">
-    <ul>
-      <li id="ABOUT">About</li>
-      <li id="SKILLS">Skills</li>
-      <li id="PROJECT">Project</li>
+<header class="header">
+  <nav class="navbar">
+    <a href="#" class="nav-logo">NS🤍</a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#S1_About" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#S2_Service" class="nav-link">Service</a></li>
+      <li class="nav-item"><a href="#S3_Skills" class="nav-link">Skills</a></li>
+      <li class="nav-item"><a href="#S4_Project" class="nav-link">Project</a></li>
+      <li class="nav-item"><a href="#S6_Assignment" class="nav-link">Assignment</a></li>
+      <li class="nav-item"><a href="#S7_Gallery" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="#contact-icons" class="nav-link">Contact</a></li>
     </ul>
-  </nav> <nav id="r_navigate">
-  <ul>
-    <li id="TOLLS">Tools</li>
-    <li id="GALLERY">Gallery</li>
-    <li id="CONTACT">Contact</li>
-  </ul>
-</nav>
-  <p id="bio">Ungraduated Software Engineer</p>
+    <div class="nav-toggle" id="nav-toggle">
+      <span class="menu-icon">&#9776;</span>
+    </div>
+  </nav>
 </header>
+<section class="hero" id="home">
+  <div class="hero-image">
+    <img src="https://i.pinimg.com/736x/1e/e6/54/1ee654f04d664cf6d985c4fd8996a38e.jpg" alt="Hero Image">
+  </div>
+  <div class="hero-content">
+    <h1>  Hello,mate👋</h1><br>
+    <h2>I'm Nimasha Shehani</h2>
+    <br>
+    <br>
+    <div class="animated-text">
+      I'm a <span id="typed-text"></span>
+    </div>
+    <br>
+    <p>Creating innovative solutions with code</p>
+  </div>
+</section>
 
 <!-- About Section -->
 <section id="S1_About">
-  <button id="cvrec">
-    Download cv
-  </button>
-  <h1 id="about_txt"> About </h1>
-  <h6 id="about1">I am a GDSE student at IJSE,actively developing my skills in software engineering and IT.<br>I've worked on several projects and am continuously learning and improving my programming abilities. My current studies are focused on enhancing my knowledge and expertise in this field.</h6>
-  <div id="line"></div>
+  <div id="about">
+  <img src="Assest/Image/image.png" >
+ <button id="cvrec">
+   Download cv
+ </button>
+ <h1 id="about_txt"> About </h1>
+ <h6 id="about1">I am a GDSE student at IJSE,actively developing my skills in software engineering and IT.<br>I've worked on several projects and am continuously learning and improving my programming abilities. My current studies are focused on enhancing my knowledge and expertise in this field.</h6>
+  </div>
 </section>
 
 <!-- Service Section -->
@@ -286,7 +276,6 @@
 </div>
 </section>
 
-
 <!-- Tools Section -->
 <section id="S5_Tool">
   <div id="tools-track">
@@ -446,6 +435,54 @@
 <!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+
+
+  //nav
+  document.getElementById('nav-toggle').addEventListener('click', function () {
+    document.querySelector('.nav-menu').classList.toggle('show');
+  });
+
+//hero
+  const roleArray = ["Software Developer", "UI/UX Engineer"];
+  let roleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typingSpeed = 150; // typing speed in milliseconds
+  const erasingSpeed = 100;
+  const delayBetweenWords = 2000; // delay before typing the next word
+
+  function type() {
+    const typedTextElement = document.getElementById("typed-text");
+
+    if (charIndex < roleArray[roleIndex].length && !isDeleting) {
+      // Type each character
+      typedTextElement.textContent += roleArray[roleIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingSpeed);
+    } else if (isDeleting && charIndex > 0) {
+      // Delete each character
+      typedTextElement.textContent = roleArray[roleIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(type, erasingSpeed);
+    } else {
+      // Switch between typing and deleting states
+      isDeleting = !isDeleting;
+      if (!isDeleting) {
+        // Move to the next role after finishing deletion
+        roleIndex = (roleIndex + 1) % roleArray.length;
+      }
+      setTimeout(type, delayBetweenWords);
+    }
+  }
+
+  // Start typing animation
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(type, delayBetweenWords);
+  });
+
+
+  // Update text every 3 seconds
+  setInterval(changeRole, 3000);
 
   //contact section
   document.addEventListener("DOMContentLoaded", () => {

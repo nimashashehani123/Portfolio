@@ -1,6 +1,6 @@
 #S2_Service{
     padding: 50px 0;
-    background:  url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjkyNDc2NTd8&ixlib=rb-4.0.3&q=85");
+    background:  #0b000d;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -22,9 +22,9 @@
     z-index: 2;
     align-items: center;
     padding: 20px;
-    background: rgba(0, 0, 0,0.6);
+    background: rgba(256, 256, 256,0.01);
     margin: 10px 100px;
-    box-shadow: 0 4px 20px rgba(256, 256, 256, 0.6);
+    box-shadow: 0 4px 20px rgba(256, 256, 256, 0.1);
     border-radius: 20px;
 
 }

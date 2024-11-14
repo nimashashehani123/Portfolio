@@ -1,6 +1,6 @@
 #S1_About {
     padding: 100px 20px;
-    background-color: #111;
+    background: #0b000d;
     text-align: center;
     position: relative;
 }
@@ -22,8 +22,8 @@
 }
 
 #cvrec {
-    background-color: #e94560;
-    color: white;
+    background-color:#ed82e6;
+    color: black;
     padding: 10px 30px;
     font-size: 1.2rem;
     border-radius: 25px;

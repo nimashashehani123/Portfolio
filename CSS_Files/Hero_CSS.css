@@ -1,349 +1,417 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-padding-top: 4rem;
+}
+
+html {
     scroll-behavior: smooth;
-    list-style: none;
-    text-decoration: none;
 }
 
 body {
-    overflow-x: hidden;
+    font-family:  sans-serif;
     background: black;
 }
 
-header {
-    position: relative;
-    background: black;
-}
-#main-nav>ul{
+.header {
+    width: 100%;
+    background-color:#3b0135;
+    opacity: 0.9;
+    padding: 1rem 0;
     position: fixed;
-    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000000000000000000000000000000000000000000;
+}
+
+/* Navbar Styles */
+.navbar {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-family: "Lexend Zetta", sans-serif;
+}
+.nav-logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+.nav-menu {
+    display: flex;
+    gap: 2.5rem;
+
+}
+.nav-item {
+    list-style: none;
+}
+.nav-link {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 0.8rem;
     transition: color 0.3s;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: #ed82e6;
+}
+
+.nav-toggle {
+    display: none;
     cursor: pointer;
-    background: rgba(0, 0, 0, 1);
-    z-index: -1000000000000000000;
+    font-size: 1.5rem;
+    color: #ffffff;
 }
 
-#main-nav > ul > li {
-    margin: 0.5vw 5vw;
-    font-family: "Lexend Zetta";
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2vw;
-    line-height: 3vw;
-    color: white;
-}
 
-#pink {
+/* Hero Section Styles */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 100%;
-    height: 620px;
-    background: url("https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjkyNDY1NTh8&ixlib=rb-4.0.3&q=85");
-    background-size: cover;
+    background-color: black;
+    overflow: hidden;
+    perspective: 1200px;  /* Perspective for 3D */
 }
 
-#slogan > p {
+.hero-image {
     position: absolute;
-    width: 22vw;
-    top: 3vw;
-    right: 0;
-    opacity: 100%;
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vw;
-    line-height: 3vw;
-    letter-spacing: 0.2em;
-    color: rgba(0, 0, 0, 0.8);
-}
-
-#contact_list {
-    display: flex;
-    position: absolute;
-    top: 2vw;
-    left: 3vw;
-}
-
-#contact_list > li {
-    margin: 1.5vw;
-    font-size: 1.5vw;
-    transition: color 0.3s;
-    cursor: pointer;
-}
-
-#contact_list > li:hover {
-    font-size: 2vw;
-}
-
-#main > img {
-    width: 580px;
-    height: 845px;
-    position: absolute;
-    top: -225px;
+    top: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    align-content: center;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.5;
+    animation: imageMove 20s infinite alternate;
 }
 
-#nimasha {
-    width: 840px;
-    height: 280px;
-    position: absolute;
-    top: 390px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    rotate: 1deg;
-    align-content: center;
-    z-index: 1000;
+.hero-image img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateZ(-100px);
+    transition: transform 0.3s ease;
 }
 
-#shehani {
-    width: 400px;
-    height: 140px;
-    position: absolute;
-    left: 0px;
-    right: 0;
-    margin: auto;
-    top: 585px;
-    align-content: normal;
-}
-
-#l_navigate > ul {
-    position: absolute;
-    left: 0;
-    display: flex;
-    transition: color 0.3s;
-    cursor: pointer;
-
-}
-
-#l_navigate > ul:hover {
-    color: hotpink;
-}
-
-#l_navigate > ul > li {
-    margin: 0.5vw 2vw;
-    font-family: "Lexend Zetta";
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2vw;
-    line-height: 7vw;
-    color: #FFFFFF;
-}
-
-#r_navigate > ul {
-    position: absolute;
-    right: 0vw;
-    display: flex;
-    transition: color 0.3s;
-    cursor: pointer;
-}
-
-#r_navigate > ul:hover {
-    color: hotpink;
-}
-
-#r_navigate > ul > li {
-    margin: 0.5vw 2vw;
-    font-family: 'Lexend Zetta';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2vw;
-    line-height: 7vw;
-    color: #FFFFFF;
-}
-
-#bio {
+.hero-content {
+    position: relative;
     text-align: center;
-    margin-top: 8vw;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vw;
-    line-height: 5vw;
-    color: #FFFFFF;
-}
-@media (max-width: 1440px) {
-    #slogan > p {
-        font-size: 1.8vw;
-        line-height: 2.5vw;
-    }
-
-    #nimasha {
-        width: 700px;
-    }
-
-    #shehani {
-        width: 350px;
-    }
-
-    #bio {
-        font-size: 1.8vw;
-    }
+    z-index: 2;
+    color: #fff;
+    transform-style: preserve-3d;
+    animation: fadeIn 1.5s ease-out forwards;
 }
 
+.hero h1 {
+    font-size: 4rem;
+    transform: translateZ(50px);
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    transform: translateZ(40px);
+    opacity: 0;
+    animation: slideIn 1.2s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
+.animated-text {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ed82e6;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#typed-text {
+    display: inline-block;
+    border-right: 2px solid #ed82e6;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+.hero h3 {
+    font-size: 2rem;
+    transform: translateZ(30px);
+    opacity: 0;
+    animation: slideIn 1.5s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    transform: translateZ(20px);
+    opacity: 0;
+    animation: fadeInUp 2s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+.hero-button {
+    padding: 0.8rem 2rem;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background: transparent;
+    border-radius: 30px;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeInUp 1.8s ease-out forwards;
+    animation-delay: 1s;
+    transform: translateZ(10px);
+}
+
+.hero-button:hover {
+    background-color: #ff66cc;
+    color: #fff;
+    transform: scale(1.1) translateZ(20px);
+}
+
+/* Animations */
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(50px) translateZ(0); }
+    100% { opacity: 1; transform: translateY(0) translateZ(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px) translateZ(0); }
+    100% { opacity: 1; transform: translateY(0) translateZ(0); }
+}
+
+@keyframes imageMove {
+    0% { transform: scale(1) translateX(0) translateY(0); }
+    100% { transform: scale(1.1) translateX(50px) translateY(30px); }
+}
+
+/* Parallax effect on scroll */
+.hero-content {
+    transform: translateZ(50px);
+    transition: transform 0.3s ease;
+}
+
+.hero:hover .hero-content {
+    transform: translateZ(200px);
+}
+
+.hero-button {
+    transform: translateZ(20px);
+    transition: transform 0.3s ease;
+}
+
+.hero-button:hover {
+    transform: scale(1.1) translateZ(20px);
+}
+
+/* Hover effect on image */
+.hero-image img:hover {
+    transform: scale(1.05) translateZ(-150px);
+}
+
+/* For 1024px */
 @media (max-width: 1024px) {
-    #slogan > p {
-        font-size: 2vw;
-        line-height: 3vw;
+    .hero h1 {
+        font-size: 3rem;
     }
 
-    #nimasha {
-        width: 600px;
+    .hero h2 {
+        font-size: 2.5rem;
     }
 
-    #shehani {
-        width: 300px;
+    .hero h3 {
+        font-size: 1.8rem;
     }
 
-    #bio {
-        font-size: 1.6vw;
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        transform: translateZ(-80px);
     }
 }
 
+/* For 768px */
 @media (max-width: 768px) {
-    #pink {
-        height: 500px;
-    }
-
-    #slogan > p {
-        font-size: 4vw;
-        line-height: 5vw;
-        top: 10vw;
-    }
-
-    #contact_list {
+    .nav-menu {
+        display: none;
         flex-direction: column;
-        top: 5vw;
-        left: 5vw;
-    }
-
-    #contact_list > li {
-        font-size: 2.5vw;
-        margin: 1vw 0;
-    }
-
-    #nimasha {
-        width: 500px;
-        top: 330px;
-    }
-
-    #shehani {
-        width: 250px;
-        top: 520px;
-    }
-
-    #bio {
-        font-size: 4vw;
-    }
-}
-
-@media (max-width: 425px) {
-    #slogan > p {
-        font-size: 5vw;
-        line-height: 6vw;
-    }
-
-    #contact_list {
-        top: 10vw;
-        left: 5vw;
-    }
-
-    #contact_list > li {
-        font-size: 3vw;
-        margin: 1vw 0;
-    }
-
-    #main > img {
-        width: 400px;
-        height: 645px;
         position: absolute;
-        top: -145px;
-        left: 1vw;
+        top: 3.7rem;
         right: 0;
-        margin: auto;
-        align-content: center;
+        background-color: rgba(0,0,0,0.7);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        gap: 1rem;
     }
-    #nimasha {
-        width: 350px;
-        top: 280px;
+    .nav-menu.show {
+        display: flex;
+    }
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .hero {
+        height: 80vh;
     }
 
-    #shehani {
-        width: 200px;
-        top: 460px;
+    .hero h1 {
+        font-size: 2rem;
     }
 
-    #bio {
-        font-size: 5vw;
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero h3 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero-button {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-image img {
+        transform: translateZ(-60px);
+    }
+
+    .hero-content {
+        transform: translateZ(30px);
     }
 }
 
+/* For 425px */
+@media (max-width: 425px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .animated-text {
+        font-size: 0.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero-button {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .hero-image img {
+        transform: translateZ(-40px);
+    }
+
+    .hero-content {
+        transform: translateZ(20px);
+    }
+}
+
+/* For 375px */
 @media (max-width: 375px) {
-    #slogan > p {
-        font-size: 5.5vw;
-        line-height: 7vw;
+    .hero {
+        height: 60vh;
     }
 
-    #contact_list {
-        top: 12vw;
-        left: 5vw;
+    .hero h1 {
+        font-size: 1.8rem;
     }
 
-    #contact_list > li {
-        font-size: 3.5vw;
-        margin: 1vw 0;
+    .hero h2 {
+        font-size: 1.6rem;
     }
 
-    #nimasha {
-        width: 320px;
-        top: 250px;
+    .animated-text{
+        font-size: 0.8rem;
     }
 
-    #shehani {
-        width: 180px;
-        top: 420px;
+    .hero p {
+        font-size: 0.7rem;
     }
 
-    #bio {
-        font-size: 5.5vw;
+    .hero-button {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .hero-image img {
+        transform: translateZ(-30px);
+    }
+
+    .hero-content {
+        transform: translateZ(10px);
     }
 }
 
+/* For 320px */
 @media (max-width: 320px) {
-    #slogan > p {
-        font-size: 6vw;
-        line-height: 8vw;
+    .hero {
+        height: 50vh;
     }
 
-    #contact_list {
-        top: 14vw;
-        left: 5vw;
+    .hero h1 {
+        font-size: 1.6rem;
     }
 
-    #contact_list > li {
-        font-size: 4vw;
-        margin: 1vw 0;
+    .hero h2 {
+        font-size: 1.4rem;
     }
 
-    #nimasha {
-        width: 280px;
-        top: 220px;
+    .animated-text {
+        font-size: 0.8rem;
     }
 
-    #shehani {
-        width: 160px;
-        top: 390px;
+    .hero p {
+        font-size: 0.6rem;
     }
 
-    #bio {
-        font-size: 6vw;
+    .hero-button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+    }
+
+    .hero-image img {
+        transform: translateZ(-20px);
+    }
+
+    .hero-content {
+        transform: translateZ(0px);
     }
 }
+
+
+
+

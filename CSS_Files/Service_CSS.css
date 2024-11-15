@@ -4,24 +4,28 @@
     background-size: cover;
     position: relative;
     z-index: 1;
+    margin-bottom: 2vw;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 10vw;
+    margin-top: 5vw;
+    font-family: "Lexend Zetta", sans-serif;
+    color: darkgray;
 }
 
 .service-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 5vw;
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
     align-items: center;
-    padding: 20px;
+    padding: 5vw;
     background: rgba(256, 256, 256,0.01);
     margin: 10px 100px;
     box-shadow: 0 4px 20px rgba(256, 256, 256, 0.1);
@@ -36,11 +40,12 @@
     transform-style: preserve-3d;
     transition: transform 1s;
     perspective: 1000px;
+    margin-bottom: 3vw;
 
 }
 
 .service-card:hover {
-    transform: rotateY(180deg); /* Flip the card in 3D */
+    transform: rotateY(180deg);
 }
 .content-inner .content-front,
 .content-inner .content-back {
@@ -59,13 +64,12 @@
 }
 
 .content-inner .content-back {
-    transform: rotateY(180deg); /* The back side is rotated to make it visible after flipping */
-    background: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80");
-    background-size: cover;
+    transform: rotateY(180deg);
+    background: linear-gradient(to bottom right, #2e012b,black);
 }
 
 .cf-inner .inner {
-    transform: translateZ(90px); /* This creates the 3D depth effect */
+    transform: translateZ(90px);
     text-align: center;
     position: relative;
     color: #fff;
@@ -107,12 +111,12 @@ h2 {
 }
 
 .content-front {
-    background: url("https://images.unsplash.com/photo-1618224619763-c26996a38420?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjkyNTUxNjJ8&ixlib=rb-4.0.3&q=85");
-    background-size: cover;
+    background: linear-gradient(to bottom right, #2e012b,black);
+
 }
 
 .content-inner:hover .content-front {
-    background-color: #05C2DE; /* Vibrant hover color */
+    background-color: #42013e;
     color: #ffffff;
 }
 .content-inner {
@@ -120,7 +124,7 @@ h2 {
 }
 
 .content-inner:hover {
-    box-shadow: 0 10px 30px rgba(0, 194, 222, 0.5);
+    box-shadow: 0 10px 30px #42013e;
 }
 .content-inner {
     transition: transform 0.8s ease-in-out, box-shadow 0.3s ease;
@@ -146,6 +150,10 @@ h2 {
         margin: 25px 25px;
     }
 
+    .section-title{
+        font-size: 2.5rem;
+    }
+
 
 
 }
@@ -155,6 +163,9 @@ h2 {
     .service-container {
         margin: 25px 25px;
     }
+    .section-title{
+        font-size: 2rem;
+    }
 
 }
 
@@ -163,6 +174,9 @@ h2 {
     .service-container {
         margin: 25px 25px;
         gap: 5px; /* Reduce gap between elements */
+    }
+    .section-title{
+        font-size: 1.8rem;
     }
 
 
@@ -174,7 +188,9 @@ h2 {
         margin: 25px 25px;
         gap: 10px;
     }
-
+    .section-title{
+        font-size: 1.6rem;
+    }
 
 }
 
@@ -183,6 +199,9 @@ h2 {
     .service-container {
         margin: 25px 25px;
         gap: 5px;
+    }
+    .section-title{
+        font-size: 1.4rem;
     }
 
 }

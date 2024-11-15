@@ -6,37 +6,39 @@
     position: relative;
 }
 
-#about_txt {
-    font-size: 3rem;
+#about_txt{
+    font-size: 2rem;
     color: darkgray;
-    margin-bottom: 20px;
-    font-family: 'Cinzel';
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+    font-family: "Lexend Zetta", sans-serif;
 }
 
-#about_content {
+#about_content{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
-    text-align: left; /* Text aligned left for readability */
+    text-align: left;
 }
 
-#about_text {
+#about_text{
     flex: 1;
     max-width: 50%;
 }
 
-#about1 {
-    font-family: 'Lexend';
-    font-size: 1.2rem;
+#about1{
+    font-family: Arial;
+    font-size: 1rem;
     color: darkgray;
     line-height: 1.8;
     margin-bottom: 20px;
+    font-weight: normal;
 }
 
-#cvrec {
+#cvrec{
     background-color: #ed82e6;
     color: black;
     padding: 10px 30px;
@@ -45,32 +47,90 @@
     cursor: pointer;
     border: none;
     transition: background-color 0.3s ease;
+    margin: 5vw 0;
 }
 
-#cvrec:hover {
-    background-color: #6b095c;
+#cvrec:hover{
+    background-color: #2e012b;
 }
 
-#about_image {
+#about_image{
     flex: 1;
-    max-width: 40%; /* Image width relative to section */
+    max-width: 40%;
     height: auto;
     border-radius: 10px;
-    border: 3px solid #6b095c;
+    border: 5px solid #2e012b;
+    padding: 3vw;
+    opacity: 0.5;
 }
 
-/* Responsive Design */
+
+@media (max-width: 1024px){
+    #about_txt{
+        font-size: 2.5rem;
+
+    }
+    #about1{
+        font-size: 1.1rem;
+    }
+    #about_image{
+        max-width: 45%;
+    }
+}
+
+
 @media (max-width: 768px) {
     #about_content {
-        flex-direction: column; /* Stack text and image */
-        text-align: center;
+        flex-direction: column;
     }
-
     #about_text, #about_image {
-        max-width: 100%; /* Full width for both */
+        max-width: 100%;
     }
-
     #about1 {
         font-size: 1rem;
+    }
+    #about_txt {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+    #about_txt {
+        font-size: 1.8rem;
+    }
+    #about1 {
+        font-size: 0.95rem;
+    }
+    #cvrec {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    #about_txt {
+        font-size: 1.6rem;
+    }
+    #about1 {
+        font-size: 0.9rem;
+    }
+    #cvrec {
+        font-size: 0.9rem;
+        padding: 7px 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    #about_txt {
+        font-size: 1.4rem;
+    }
+    #about1 {
+        font-size: 0.85rem;
+    }
+    #cvrec {
+        font-size: 0.8rem;
+        padding: 6px 15px;
     }
 }

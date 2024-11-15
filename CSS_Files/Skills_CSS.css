@@ -1,7 +1,7 @@
 #S3_Skills {
     top: 1000px;
     padding: 80px 20px;
-    background-color: #111;
+    background-color: #0b000d;
     color: #fff;
     text-align: center;
 }
@@ -17,7 +17,7 @@
 .skills-title {
     font-size: 3rem;
     margin-bottom: 50px;
-    color: #e94560;
+    color: #ed82e6;
     position: relative;
 }
 
@@ -25,7 +25,7 @@
     content: '';
     width: 80px;
     height: 3px;
-    background-color: #e94560;
+    background-color: #ed82e6;
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -33,7 +33,7 @@
 }
 
 .skill-card {
-    background-color: #222;
+    background-image: linear-gradient(to bottom right, black,#111);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -63,7 +63,7 @@
 
 .skill-bar {
     width: 100%;
-    background-color: #333;
+    background-color:#2e012b;
     border-radius: 10px;
     overflow: hidden;
     height: 15px;
@@ -71,6 +71,6 @@
 
 .skill-level {
     height: 100%;
-    background-color: #ff5e7e;
+    background-color: #edc7ec;
     transition: width 1s ease-in-out;
 }

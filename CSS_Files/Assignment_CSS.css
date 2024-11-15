@@ -67,7 +67,7 @@
     right: 0px;
     z-index: -1;
     border: 5px solid #bbb;
-    border-color: transparent deepskyblue;
+    border-color: transparent #2e012b;
 }
 
 .snip1566 img {
@@ -147,9 +147,10 @@ background-size: cover;*/
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
-    background: rgba(256, 256, 256, 0.5);
+    background: rgba(0, 0,0, 0.1);
     backdrop-filter: blur(8px);
     border-radius: 20px;
+    border: 1px solid white;
     z-index: 100000000;
     padding: 30px;
     color: white;
@@ -162,8 +163,8 @@ background-size: cover;*/
     top: 20px;
     left: 20px;
     font-size: 18px;
-    background: #16a085;
-    color: white;
+    background: #ed82e6;
+    color: black;
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
@@ -171,14 +172,17 @@ background-size: cover;*/
 }
 
 #view-more .back-btn:hover {
-    background: #1abc9c;
+    background: #2e012b;
+    color: white;
     transform: scale(1.05);
 }
 
 #view-more-content h2 {
     color: #ecf0f1;
+    font-family: Cambria;
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 5vw;
+    margin-top: 0;
     text-align: center;
 }
 
@@ -187,10 +191,11 @@ background-size: cover;*/
     color: #bdc3c7;
     text-align: justify;
     margin-bottom: 30px;
+    margin-top: 0vw;
 }
 
 .case {
-    background: linear-gradient(145deg, #2c3e50, #34495e);
+    background: linear-gradient(145deg, black,grey);
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 25px;
@@ -209,22 +214,18 @@ background-size: cover;*/
     margin-bottom: 10px;
 }
 
-.github-btn {
-    background-color: #e74c3c;
-    color: white;
-}
 
-.github-btn:hover {
-    background-color: #c0392b;
-}
 
 .case button {
-    background-color: #3498db;
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid white;
+    border-radius: 10%;
+    padding: 0.5vw;
     color: white;
 }
 
 .case button:hover {
-    background-color: #2980b9;
+    background-color: grey;
 }
 
 
@@ -265,6 +266,15 @@ background-size: cover;*/
         margin: 5px 20px;
         gap: 5px; /* Reduce gap between elements */
     }
+    #view-more-content h2 {
+        margin-top: 10vw;
+        font-size: 20px;
+    }
+
+    #view-more-content p {
+        margin-top: 10vw;
+        font-size: 15px;
+    }
 
 }
 
@@ -274,7 +284,13 @@ background-size: cover;*/
         margin: 5px 20px;
         gap: 10px;
     }
+    #view-more-content h2 {
+        margin-top: 10vw;
+    }
 
+    #view-more-content p {
+        margin-top: 10vw;
+    }
 
 }
 

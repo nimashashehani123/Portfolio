@@ -52,16 +52,16 @@
 
 #cvrec:hover{
     background-color: #2e012b;
+    color: white;
 }
 
 #about_image{
     flex: 1;
     max-width: 40%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 25px;
     border: 5px solid #2e012b;
     padding: 3vw;
-    opacity: 0.5;
 }
 
 

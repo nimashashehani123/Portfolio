@@ -1,3 +1,4 @@
+/* About Section Styling */
 #S1_About {
     padding: 100px 20px;
     background: #0b000d;
@@ -12,35 +13,64 @@
     font-family: 'Cinzel';
 }
 
+#about_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left; /* Text aligned left for readability */
+}
+
+#about_text {
+    flex: 1;
+    max-width: 50%;
+}
+
 #about1 {
     font-family: 'Lexend';
     font-size: 1.2rem;
     color: darkgray;
-    max-width: 800px;
-    margin: 0 auto;
     line-height: 1.8;
+    margin-bottom: 20px;
 }
 
 #cvrec {
-    background-color:#ed82e6;
+    background-color: #ed82e6;
     color: black;
     padding: 10px 30px;
     font-size: 1.2rem;
     border-radius: 25px;
-    margin-bottom: 30px;
     cursor: pointer;
     border: none;
     transition: background-color 0.3s ease;
 }
 
 #cvrec:hover {
-    background-color: #ff5e7e;
+    background-color: #6b095c;
 }
 
-#line {
-    height: 2px;
-    background-color: #e94560;
-    width: 150px;
-    margin: 20px auto;
+#about_image {
+    flex: 1;
+    max-width: 40%; /* Image width relative to section */
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #6b095c;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about_content {
+        flex-direction: column; /* Stack text and image */
+        text-align: center;
+    }
+
+    #about_text, #about_image {
+        max-width: 100%; /* Full width for both */
+    }
+
+    #about1 {
+        font-size: 1rem;
+    }
+}

@@ -1,12 +1,23 @@
 #S8_Contact {
-    background-size: cover;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+#S8_Contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://media.istockphoto.com/id/1489242153/photo/student-catching-notes-at-online-class.jpg?s=612x612&w=0&k=20&c=C3CUIlNBtgFNopnc901poBRVolvnFGyO3_eMcbwf1K8=") no-repeat center center / cover;
+    opacity: 0.5; /* Set the opacity of the background image */
+    z-index: -1; /* Ensure it stays behind other content */
 }
 h2{
     font-family: 'Roboto';
@@ -26,17 +37,27 @@ ul{color: white}
 
 
 }
+.section-titles{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10vw;
+    margin-top: 0vw;
+    font-family: "Lexend Zetta", sans-serif;
+    color: darkgray;
+}
 
 #contact-form {
-    box-shadow: 0 4px 20px rgba(256, 256, 256, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     padding: 40px;
-    max-width: 900px;
+    max-width: 50%;
     width: 100%;
     position: relative;
     z-index: 1;
     transition: transform 0.3s;
     background: rgba(256, 256, 256, 0.1);
+
 }
 
 #contact-form:hover {
@@ -96,9 +117,9 @@ ul{color: white}
 
 #submit-btn {
     padding: 15px;
-    background-color: #333;
+    background: linear-gradient(to bottom right, #2e012b,black);
     border: none;
-    color: darkgrey;
+    color: white;
     font-size: 1.2rem;
     width: 100%;
     border-radius: 8px;
@@ -119,6 +140,7 @@ ul{color: white}
 }
 
 #contact-card {
+    background:#0b000d;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     padding: 40px;
     width: 100%;
@@ -126,7 +148,7 @@ ul{color: white}
     transition: transform 0.3s;
     position: relative;
     z-index: 1;
-    background: url("");
+
 }
 
 
@@ -162,7 +184,7 @@ ul{color: white}
 }
 
 #contact-icons i:hover {
-    color: #ffe6e6;
+    color: #e6b207;
 }
 
 #social-icons {
@@ -180,7 +202,7 @@ ul{color: white}
 
 #social-icons a:hover {
     transform: scale(1.2);
-    color: #ffe6e6;
+    color: #e6b207;
 }
 
 @media (max-width: 1440px) {
@@ -199,6 +221,9 @@ ul{color: white}
     #contact-section {
         padding: 20px 15px;
     }
+    #contact-form{
+        max-width: 90%;
+    }
     #contact-form h2, #contact-card h2 {
         font-size: 1.8rem;
     }
@@ -216,6 +241,9 @@ ul{color: white}
 @media (max-width: 768px) {
     #contact-form, #contact-card {
         padding: 20px;
+    }
+    #contact-form{
+        max-width: 90%;
     }
     .form-group input, .form-group textarea {
         padding: 10px;
@@ -239,6 +267,9 @@ ul{color: white}
     #contact-form, #contact-card {
         padding: 15px;
     }
+    #contact-form{
+        max-width: 90%;
+    }
     #contact-form h2, #contact-card h2 {
         font-size: 1.5rem;
     }
@@ -258,6 +289,11 @@ ul{color: white}
     #contact-form, #contact-card {
         padding: 10px;
     }
+
+    #contact-form{
+        max-width: 90%;
+    }
+
     #contact-form h2, #contact-card h2 {
         font-size: 1.3rem;
     }

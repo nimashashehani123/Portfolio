@@ -9,16 +9,6 @@
   <link rel="icon" href="Assest/ns.png" type="image/x-icon">
   <title>NS - Nimasha Shehani</title>
 
-  <link rel="stylesheet" href="CSS_Files/Hero_CSS.css">
-  <link rel="stylesheet" href="CSS_Files/About_CSS.css">
-  <link rel="stylesheet" href="CSS_Files/Service_CSS.css">
-  <link rel="stylesheet" href="CSS_Files/Skills_CSS.css">
-  <link rel="stylesheet" href="CSS_Files/Project_CSS.css">
-  <link rel="stylesheet" href="CSS_Files/Tool_CSS.css">
-  <link rel="stylesheet" href="CSS_Files/Assignment_CSS.css">
-  <link rel="stylesheet" href="CSS_Files/Gallery_CSS.css">
-  <link rel="stylesheet" href="CSS_Files/Contact_CSS.css">
-
   <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -36,6 +26,16 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS_Files/Hero_CSS.css">
+  <link rel="stylesheet" href="CSS_Files/About_CSS.css">
+  <link rel="stylesheet" href="CSS_Files/Service_CSS.css">
+  <link rel="stylesheet" href="CSS_Files/Skills_CSS.css">
+  <link rel="stylesheet" href="CSS_Files/Project_CSS.css">
+  <link rel="stylesheet" href="CSS_Files/Tool_CSS.css">
+  <link rel="stylesheet" href="CSS_Files/Assignment_CSS.css">
+  <link rel="stylesheet" href="CSS_Files/Gallery_CSS.css">
+  <link rel="stylesheet" href="CSS_Files/Contact_CSS.css">
 </head>
 <body>
 
@@ -48,7 +48,7 @@
       <li class="nav-item"><a href="#S1_About" class="nav-link">About</a></li>
       <li class="nav-item"><a href="#S2_Service" class="nav-link">Service</a></li>
       <li class="nav-item"><a href="#S3_Skills" class="nav-link">Skills</a></li>
-      <li class="nav-item"><a href="#S4_Project" class="nav-link">Project</a></li>
+      <li class="nav-item"><a href="#projects" class="nav-link">Project</a></li>
       <li class="nav-item"><a href="#S6_Assignment" class="nav-link">Assignment</a></li>
       <li class="nav-item"><a href="#S7_Gallery" class="nav-link">Gallery</a></li>
       <li class="nav-item"><a href="#contact-icons" class="nav-link">Contact</a></li>
@@ -76,25 +76,26 @@
 </section>
 
 <!-- About Section -->
-<section id="S1_About">
+<section id="S1_About" data-aos="fade-up"
+         data-aos-anchor-placement="top-center">
   <h1 id="about_txt">About Me</h1>
   <div id="about_content">
     <div id="about_text">
-      <h6 id="about1">
+      <h6 id="about1" data-aos="fade-up">
         I am a GDSE student at IJSE, actively developing my skills in software engineering and IT.
         I've worked on several projects and am continuously learning and improving my programming abilities.
         My current studies are focused on enhancing my knowledge and expertise in this field.
       </h6>
       <button id="cvrec">Download CV</button>
     </div>
-    <img src="Assest/Image/1726657677368(1)(1).png" alt="Profile Picture" id="about_image">
+    <img  data-aos="zoom-in"  src="Assest/Image/1726657677368(1)(1).png" alt="Profile Picture" id="about_image" >
   </div>
 </section>
 
 <!-- Service Section -->
 <section id="S2_Service">
   <h2 class="section-title">My Services</h2>
-  <div class="service-container">
+  <div class="service-container"data-aos="zoom-in">
     <div class="service-card content-inner">
       <div class="content-front cf-inner">
         <div class="inner">
@@ -171,7 +172,7 @@
 <!-- Skills Section -->
 <section id="S3_Skills">
   <h2 class="section-title">Skills</h2>
-    <div id="skills-container">
+    <div id="skills-container" >
       <div class="skill-card">
         <div class="skill-icon">
           <i class="fab fa-html5"></i>
@@ -216,91 +217,101 @@
 </section>
 
 <!-- Projects Section -->
-<section id="S4_Project">
-<div class="project-container">
-
-  <div class="slide">
-
-    <div class="item"
-         style="background-image: url(https://i.pinimg.com/474x/10/a2/f0/10a2f0c4221be23c238934528bab97e8.jpg);">
-      <div class="content">
-        <div class="name">Switzerland</div>
-        <div class="des">X-Dev, Transforming code into visual poetry..!</div>
-        <button>See More</button>
+<section id="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="containers"  data-aos="zoom-out">
+    <div class="project-cards-wrapper">
+      <div class="project-cards">
+        <div class="cards">
+          <div class="card-image">
+            <img src="https://plus.unsplash.com/premium_photo-1682092170538-9ebcb3a09ac1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3VsaW5hcnklMjBzdHVkZW50JTIwbWFuYWdlbWVudHxlbnwwfHwwfHx8MA%3D%3D" alt="Project 1" />
+          </div>
+          <div class="card-content">
+            <h3>Project 1</h3>
+            <p>Short description of the project. A brief overview of what this project does.</p>
+            <div class="button-container">
+              <a href="project1-link.html" class="btn">View Project</a>
+              <a href="github-link-1" class="github-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-image">
+            <img src="Assest/Image/Screenshot%202024-11-19%20102256.png" alt="Project 1" />
+          </div>
+          <div class="card-content">
+            <h3>Project 1</h3>
+            <p>Short description of the project. A brief overview of what this project does.</p>
+            <div class="button-container">
+              <a href="project1-link.html" class="btn">View Project</a>
+              <a href="github-link-1" class="github-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-image">
+            <img src="Assest/Image/Screenshot%202024-11-19%20101523.png" alt="Project 1" />
+          </div>
+          <div class="card-content">
+            <h3>Project 1</h3>
+            <p>Short description of the project. A brief overview of what this project does.</p>
+            <div class="button-container">
+              <a href="project1-link.html" class="btn">View Project</a>
+              <a href="github-link-1" class="github-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-image">
+            <img src="Assest/Image/connect%204.jpg" alt="Project 1" />
+          </div>
+          <div class="card-content">
+            <h3>Project 1</h3>
+            <p>Short description of the project. A brief overview of what this project does.</p>
+            <div class="button-container">
+              <a href="project1-link.html" class="btn">View Project</a>
+              <a href="github-link-1" class="github-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-image">
+            <img src="Assest/Image/Screenshot%202024-07-24%20230829.png" alt="Project 1" />
+          </div>
+          <div class="card-content">
+            <h3>Project 1</h3>
+            <p>Short description of the project. A brief overview of what this project does.</p>
+            <div class="button-container">
+              <a href="project1-link.html" class="btn">View Project</a>
+              <a href="github-link-1" class="github-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards here -->
       </div>
     </div>
-    <div class="item"
-         style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);">
-      <div class="content">
-        <div class="name">Projects</div>
-        <div class="des">X-Dev, Transforming code into visual poetry..!</div>
-        <button>See More</button>
-      </div>
-    </div>
-    <div class="item"
-         style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
-      <div class="content">
-        <div class="name">Iceland</div>
-        <div class="des">X-Dev, Transforming code into visual poetry..!</div>
-        <button>See More</button>
-      </div>
-    </div>
-    <div class="item"
-         style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
-      <div class="content">
-        <div class="name">Australia</div>
-        <div class="des">X-Dev, Transforming code into visual poetry..!</div>
-        <button>See More</button>
-      </div>
-    </div>
-    <div class="item"
-         style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
-      <div class="content">
-        <div class="name">Netherland</div>
-        <div class="des">X-Dev, Transforming code into visual poetry..!</div>
-        <button>See More</button>
-      </div>
-    </div>
-    <div class="item"
-         style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
-      <div class="content">
-        <div class="name">Ireland</div>
-        <div class="des">X-Dev, Transforming code into visual poetry..! </div>
-        <button>See More</button>
-      </div>
-    </div>
-
   </div>
-
-  <div class="button">
-    <button class="prev"><i
-            class="fa-solid fa-arrow-left"></i></button>
-    <button class="next"><i
-            class="fa-solid fa-arrow-right"></i></button>
-  </div>
-
-</div>
 </section>
+
+
+
+
 
 <!-- Tools Section -->
 <section id="S5_Tool">
   <div id="tools-track">
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
-    <div class="tool-item"><img src="Assest/Image/IntelliJ_IDEA_Icon.svg.png"></div>
+    <div class="tool-item"><i class="fas fa-code"></i></div>
+    <div class="tool-item"><i class="fas fa-file-alt"></i></div>
+    <div class="tool-item"><i class="fab fa-figma"></i></div>
+    <div class="tool-item"><i class="fab fa-html5"></i></div>
+    <div class="tool-item"><i class="fab fa-css3-alt"></i></div>
+    <div class="tool-item"><i class="fab fa-js"></i></div>
+    <div class="tool-item"><i class="fab fa-java"></i></div>
+    <div class="tool-item"><i class="fab fa-bootstrap"></i></div>
+    <div class="tool-item"><i class="fab fa-windows"></i></div>
+    <div class="tool-item"><i class="fab fa-js"></i></div>
+    <div class="tool-item"><i class="fab fa-java"></i></div>
+    <div class="tool-item"><i class="fab fa-figma"></i></div>
   </div>
 </section>
 
@@ -310,47 +321,60 @@
   <div class="container">
     <div class="assignment">
       <figure class="snip1566">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample14.jpg" alt="Assignment 1" />
+        <img src="https://media.istockphoto.com/id/1500285927/photo/young-woman-a-university-student-studying-online.jpg?s=612x612&w=0&k=20&c=yvFDnYMNEJ6WEDYrAaOOLXv-Jhtv6ViBRXSzJhL9S_k=" alt="Assignment 1" />
         <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 1', 'This is the first assignment. It involves creating a responsive web design using HTML, CSS, and JavaScript.', [{caseName: 'Designing Layout', viewLink: 'https://drive.google.com/file/d/1b8IosScjny0_V92Nu4H09o96eE9IgGQH/view?usp=sharing'}])">view more</i></figcaption>
       </figure>
       <div>Assignment 1</div>
     </div>
     <div class="assignment">
-      <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="Assignment 2" />
-        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', [{caseName: 'UI Building', gitLink: 'https://github.com/nimashashehani123/Portfolio.git',viewLink: 'http://localhost:63342/Portfolio/index.html?_ijt=d49jl5h1ln3o7norjn029352iv&_ij_reload=RELOAD_ON_SAVE'}])">view more</i></figcaption>
+      <figure class="snip1566"><img src="https://media.istockphoto.com/id/1264296727/photo/female-student.jpg?s=612x612&w=0&k=20&c=LQpEjt9dwiEfFTWCJAUNDcP8u5vtnR9DhloZL-vm-bA=" alt="Assignment 2" />
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', [{caseName: 'UI Building', gitLink: 'https://github.com/nimashashehani123/Portfolio/tree/85595e4dcfb4d72bd24a5ce17569af4b3461e0d0',viewLink: 'http://localhost:63342/Portfolio/index.html?_ijt=d49jl5h1ln3o7norjn029352iv&_ij_reload=RELOAD_ON_SAVE'}])">view more</i></figcaption>
       </figure>
       <div>Assignment 2</div>
     </div><div class="assignment">
-      <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="Assignment 3" />
-        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 3', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', [{caseName: 'Case1', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'Assignment/Assignment-03/Case1.html'},{caseName: 'Case2', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'Assignment/Assignment-03/Case 02.html'},{caseName: 'Case3', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'Assignment/Assignment-03/Case 03.html'},{caseName: 'Case4', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'Assignment/Assignment-03/Case 04.html'},{caseName: 'Case5', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'Assignment/Assignment-03/Case 05.html'},{caseName: 'Case6', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'Assignment/Assignment-03/Case 06.html'}])">view more</i></figcaption>
+      <figure class="snip1566"><img src="https://media.istockphoto.com/id/1329003941/photo/agenda-organize-with-color-coding-sticky-for-time-management.jpg?s=612x612&w=0&k=20&c=MXeOW0DlqYJQQ_bQmntR5jVhW5iP5rJ0zXxLrK10BW4=" alt="Assignment 3" />
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 3', 'The third assignment covers implementing given designs using only absalute and relative positions', [{caseName: 'Case1', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'http://localhost:3000/Assignment-03/Case%2001.html?_ijt=4hsco00n6ou0rpcbkstj1c2ahh&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case2', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'http://localhost:63342/Assignment-03/Case%2002.html?_ijt=88c89gs176cn2qcvqcl3cmkups&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case3', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'http://localhost:63342/Assignment-03/Case%2003.html?_ijt=ghhmlevl1b1h8u014b4mpph1mk&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case4', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'http://localhost:63342/Assignment-03/Case%2004.html?_ijt=ghhmlevl1b1h8u014b4mpph1mk&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case5', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'http://localhost:63342/Assignment-03/Case%2005.html?_ijt=ghhmlevl1b1h8u014b4mpph1mk&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case6', gitLink: 'https://github.com/nimashashehani123/Assignment-03.git',viewLink: 'http://localhost:63342/Assignment-03/Case%2006.html?_ijt=ghhmlevl1b1h8u014b4mpph1mk&_ij_reload=RELOAD_ON_SAVE'}])">view more</i></figcaption>
       </figure>
       <div>Assignment 3</div>
     </div><div class="assignment">
-      <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="Assignment 2" />
-        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', [{caseName: 'UI Building', gitLink: 'https://github.com/example/assignment2'}, {caseName: 'Logic Implementation', gitLink: 'https://github.com/example/assignment2-logic',viewLink: 'tools.html'}])">view more</i></figcaption>
+      <figure class="snip1566"><img src="https://media.istockphoto.com/id/629189720/photo/group-of-young-people-sitting-at-table-reading-books.jpg?s=612x612&w=0&k=20&c=HMq0Z5KVpDdt7EShPZQ62U_oJFcgUFsTRbPWu2aJyEY=" alt="Assignment 4" />
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 4', 'The fourth assignment covers implementing animations using only transitions and key-frames.', [{caseName: 'Case1', gitLink: 'https://github.com/nimashashehani123/Assignment-04.git',viewLink: 'http://localhost:63342/Assignment-04/Case1.html?_ijt=61bmnbatl9m92cv76125nfasfa&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case1', gitLink: 'https://github.com/nimashashehani123/Assignment-04.git',viewLink: 'http://localhost:63342/Assignment-04/Case1.html?_ijt=61bmnbatl9m92cv76125nfasfa&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case2', gitLink: 'https://github.com/nimashashehani123/Assignment-04.git',viewLink: 'http://localhost:63342/Assignment-04/Case2.html?_ijt=a4hkocpjehobcrcg0debirvgu9&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case3', gitLink: 'https://github.com/nimashashehani123/Assignment-04.git',viewLink: 'http://localhost:63342/Assignment-04/Case3.html?_ijt=a4hkocpjehobcrcg0debirvgu9&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case4', gitLink: 'https://github.com/nimashashehani123/Assignment-04.git',viewLink: 'http://localhost:63342/Assignment-04/Case%204.html?_ijt=a4hkocpjehobcrcg0debirvgu9&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case5', gitLink: 'https://github.com/nimashashehani123/Assignment-04.git',viewLink: 'http://localhost:63342/Assignment-04/Case5.html?_ijt=a4hkocpjehobcrcg0debirvgu9&_ij_reload=RELOAD_ON_SAVE'},{caseName: 'Case6', gitLink: 'https://github.com/nimashashehani123/Assignment-04.git',viewLink: 'http://localhost:63342/Assignment-04/Case6.html?_ijt=e5fp54b0quauhndemsr7f7r3o3&_ij_reload=RELOAD_ON_SAVE'}])">view more</i></figcaption>
       </figure>
       <div>Assignment 4</div>
     </div><div class="assignment">
-      <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="Assignment 2" />
-        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', [{caseName: 'UI Building', gitLink: 'https://github.com/example/assignment2'}, {caseName: 'Logic Implementation', gitLink: 'https://github.com/example/assignment2-logic',viewLink: 'tools.html'}])">view more</i></figcaption>
+      <figure class="snip1566"><img src="https://media.istockphoto.com/id/949118068/photo/books.jpg?s=612x612&w=0&k=20&c=1vbRHaA_aOl9tLIy6P2UANqQ27KQ_gSF-BH0sUjQ730=" alt="Assignment 5" />
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 5', 'The fifth assignment covers implementing responsive portfolio website', [{caseName: 'Portfolio', gitLink: 'https://github.com/nimashashehani123/Portfolio.git',viewLink: 'http://localhost:63342/Portfolio/index.html?_ijt=4rm9reigh85mnhq63np871nott&_ij_reload=RELOAD_ON_SAVE'}])">view more</i></figcaption>
       </figure>
       <div>Assignment 5</div>
     </div><div class="assignment">
-      <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="Assignment 2" />
-        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', [{caseName: 'UI Building', gitLink: 'https://github.com/example/assignment2'}, {caseName: 'Logic Implementation', gitLink: 'https://github.com/example/assignment2-logic',viewLink: 'tools.html'}])">view more</i></figcaption>
+      <figure class="snip1566"><img src="https://media.istockphoto.com/id/1364077037/photo/african-young-teenager-e-learning-on-distance-using-laptop-writing-homework-assignment-in.jpg?s=612x612&w=0&k=20&c=idtUN9U7sHyLAmCpKWV7PaIAiKYDT-zhOTcnBjtrltw=" alt="Assignment 6" />
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 6', 'The sixth assignment covers implementing a Simple POS Ui design', [{caseName: 'POS UI Building', gitLink: 'https://github.com/nimashashehani123/POS-System.git',viewLink: 'https://www.figma.com/design/xZWBFTlGspRWX31zmy9Xl3/Untitled?node-id=0-1&t=jh7ze3U5TelCrBx4-1&authuser=0'}])">view more</i></figcaption>
       </figure>
       <div>Assignment 6</div>
     </div><div class="assignment">
-      <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="Assignment 2" />
-        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', [{caseName: 'UI Building', gitLink: 'https://github.com/example/assignment2'}, {caseName: 'Logic Implementation', gitLink: 'https://github.com/example/assignment2-logic',viewLink: 'tools.html'}])">view more</i></figcaption>
+      <figure class="snip1566"><img src="https://media.istockphoto.com/id/1487737886/photo/female-student-taking-notes-while-e-learning-in-library.jpg?s=612x612&w=0&k=20&c=cy7kLfDQNhN3AZv7d83XrTS0liROfIMrul9RhPoW-OA=" alt="Assignment 7" />
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 7', 'The seventh assignment covers implementing a SPA (POS).', [{caseName: 'SPA', gitLink: 'https://github.com/nimashashehani123/POS-System.git',viewLink: 'http://localhost:63342/POS-System/Pos%20System/index.html?_ijt=vbpmgrahqah3tc81dl3ig3g6hi&_ij_reload=RELOAD_ON_SAVE'}])">view more</i></figcaption>
       </figure>
       <div>Assignment 7</div>
     </div><div class="assignment">
-      <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="Assignment 2" />
-        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 2', 'The second assignment covers implementing a JavaFX application using FXML files and JavaFX controls.', [{caseName: 'UI Building', gitLink: 'https://github.com/example/assignment2'}, {caseName: 'Logic Implementation', gitLink: 'https://github.com/example/assignment2-logic',viewLink: 'tools.html'}])">view more</i></figcaption>
+      <figure class="snip1566"><img src="https://media.istockphoto.com/id/1161370536/photo/dreamy-woman-podring-while-working-on-journalistic-publication-sitting-with-notebook-in-cafe.jpg?s=612x612&w=0&k=20&c=3kBh4OhYFWyL7Au2R67VNHPoNvWMss4ROfAtF9Eb_14=" alt="Assignment 8" />
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 8', 'The eigth assignment covers implementing a Que process using HTML,CSS and JS', [{caseName: 'Case1', gitLink: 'https://github.com/nimashashehani123/Assignment-08.git',viewLink: 'http://localhost:63342/Assignment%2008/index.html?_ijt=73obsa77ajug9scl8e2gag8vf2&_ij_reload=RELOAD_ON_SAVE'}, {caseName: 'Case2', gitLink: 'https://github.com/nimashashehani123/Assignment-08.git',viewLink: 'http://localhost:63342/Assignment%2008/index2.html?_ijt=73obsa77ajug9scl8e2gag8vf2&_ij_reload=RELOAD_ON_SAVE'}])">view more</i></figcaption>
       </figure>
-      <div>Assignment 8</div>
-    </div>
+    <div>Assignment 8</div></div><div class="assignment">
+      <figure class="snip1566"><img src="https://media.istockphoto.com/id/647171454/photo/studying-at-night.jpg?s=612x612&w=0&k=20&c=1vGdYLeZlt_CBmJ9XUo4iHd-1QEK1FDw3s0dSQQ7AgM=" alt="Assignment 9" />
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 9', 'The ninth assignment covers implementing knite rider theme light system using HTML,CSS and JS', [{caseName: 'light System', gitLink: 'https://github.com/nimashashehani123/Assignment---09.git',viewLink: 'http://localhost:63342/Assignment%20-%2009/index.html?_ijt=r3gneomt7484r7gk824eg5q7m1&_ij_reload=RELOAD_ON_SAVE'}])">view more</i></figcaption>
+      </figure>
+    <div>Assignment 9</div></div><div class="assignment">
+      <figure class="snip1566"><img src="https://media.istockphoto.com/id/1349104991/photo/e-learning-online-education-concept.jpg?s=612x612&w=0&k=20&c=dta2tnpaC95FdcqSy4bpp2tLzBQDTCNajXeLxNsKXoo=" alt="Assignment 10" />
+        <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 10', 'The tenth assignment covers implementing a Calculator', [{caseName: 'Calculator', gitLink: 'https://github.com/nimashashehani123/Assignment-10.git',viewLink: 'http://localhost:63342/Assignment%2010/index.html?_ijt=j0g8n1vrahhojhkd7goglt82ph&_ij_reload=RELOAD_ON_SAVE'}])">view more</i></figcaption>
+      </figure>
+      <div>Assignment 10</div>
+    </div><div class="assignment">
+    <figure class="snip1566"><img src="https://media.istockphoto.com/id/1291288780/photo/this-day-has-no-end.jpg?s=612x612&w=0&k=20&c=c-evJ2RPU_12sBYNHGZmW0t7t8SduXzRayUjyThU0U4=" alt="Assignment 11" />
+      <figcaption><i class="ion-android-open" onclick="openViewMore('Assignment 11', 'The eleventh assignment covers completing POS.', [{caseName: 'POS', gitLink: 'https://github.com/nimashashehani123/POS-System.git',viewLink: 'http://localhost:63342/POS-System/Pos%20System/index.html?_ijt=vbpmgrahqah3tc81dl3ig3g6hi&_ij_reload=RELOAD_ON_SAVE'}])">view more</i></figcaption>
+    </figure>
+    <div>Assignment 11</div></div>
+  </div>
   </div>
   <!-- View More Section -->
   <div id="view-more">
@@ -363,9 +387,11 @@
 
 <!-- Gallery Section -->
 <section id="S7_Gallery">
-  <div id="gallery-container">
+  <div id="gallery-container" >
     <h2 class="section-title">Gallery</h2>
-  <ul id="cards">
+  <ul id="cards" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
     <li class="card">
       <div class="image">
         <img src="Assest/Gallery_Image/03.jpg" >
@@ -429,7 +455,7 @@
         </form>
       </div>
       <div id="contact-card">
-        <h2 class="section-title">Contact Me</h2>
+        <h2 class="section-titles">Contact Me</h2>
         <p>Let’s collaborate! Feel free to reach out through the form or the details below.</p>
         <ul id="contact-icons">
           <li><i class="fas fa-phone"></i> +94 76 216 7697</li>
@@ -452,6 +478,10 @@
 <!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+  AOS.init();
+</script>
+<script>
+
 
 
   //nav
@@ -547,18 +577,18 @@
 
 
   //project
-  let next = document.querySelector('.next')
-  let prev = document.querySelector('.prev')
+  // Example of additional functionality, such as a fade-in effect for the project cards
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll('.card');
 
-  next.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').appendChild(items[0])
-  })
+    cards.forEach((card, index) => {
+      setTimeout(() => {
+        card.style.opacity = 1;
+        card.style.transition = 'opacity 1s';
+      }, index * 200); // Stagger the animation for each card
+    });
+  });
 
-  prev.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
-  })
 
 </script>
 </body>

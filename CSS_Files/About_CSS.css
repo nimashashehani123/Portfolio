@@ -41,19 +41,19 @@
 #cvrec{
     background-color: #ed82e6;
     color: black;
-    padding: 10px 30px;
-    font-size: 1.2rem;
-    border-radius: 25px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
-    margin: 5vw 0;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
 }
 
 #cvrec:hover{
     background-color: #2e012b;
     color: white;
 }
+
 
 #about_image{
     flex: 1;

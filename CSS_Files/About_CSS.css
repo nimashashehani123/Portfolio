@@ -39,7 +39,7 @@
 }
 
 #cvrec{
-    background-color: #ed82e6;
+    background-color: #ffffff;
     color: black;
     display: inline-block;
     padding: 10px 20px;
@@ -50,8 +50,8 @@
 }
 
 #cvrec:hover{
-    background-color: #2e012b;
-    color: white;
+    background-color: #ff80bf;
+    color: black;
 }
 
 
@@ -60,7 +60,7 @@
     max-width: 40%;
     height: auto;
     border-radius: 25px;
-    border: 3px solid #e6b207;
+    border: 3px solid white;
     padding: 3vw;
 }
 
